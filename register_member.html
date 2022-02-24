@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/commons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/section.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/commons.js"></script>
+    <script src="js/register_member.js"></script>
+</head>
+<body>
+        <div id="page-wrapper">
+            <header id="main-header">
+                <h1>회원가입</h1>
+            </header>
+    
+            <div id="content">
+
+                <section id="main-section">
+                    <article>
+                        <table border="1">
+                            <tr>
+                                <td><label for="name">작성자</label></td>
+                                <td><input id="name" type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="id">아이디</label></td>
+                                <td><input id="id" type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mail">이메일</label></td>
+                                <td>
+                                    <input id="mail_before" type="text" />
+                                    @ <input id="mail_after" type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="birth">주민등록번호</label></td>
+                                <td><input type="text" id="birth" class="number" maxlength="6" onchange="red()"> - 
+                                <input type="text" class="number" maxlength="7">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone_before">휴대폰</label></td>
+                                <td> 
+                                    <select id="phone_before">
+                                        <option value="01">010</option>
+                                        <option value="02">011</option>
+                                    </select>
+
+                                    - <input type="text" id="phone_middle" maxlength="4">
+
+                                    - <input type="text" id="phone_end" maxlength="4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>성별</td>
+                                <td>
+                                    <input id="man" type="radio" name="gender" value="m" />
+                                    <label for="man">남자</label>
+                                    <input id="woman" type="radio" name="gender" value="w" checked="checked" />
+                                    <label for="woman">여자</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">글제목</label></td>
+                                <td><input id="name" type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="content">내용</label></td>
+                                <td><textarea name="content" cols="60" rows="10"/></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input id="submit" type="submit" value="제출"/></td>
+                            </tr>
+                        </table>
+                    </article>
+    
+                </section>
+    
+            </div>
+        </div>
+    
+</body>
+</html>
